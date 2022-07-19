@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="breadcrumbs">
+        <% data.breadcrumbs.forEach((item, index) => { %>
+            <div class="breadcrumbs-item-box">
+                <% if (data.breadcrumbs.length - 1 === index) { %>
+                    <a class="breadcrumbs-color breadcrumbs-item" href="<%= item.href%>"><%= item.text%></a>
+                    <span class="breadcrumbs-item-decorator"></span>
+                <% } else { %>
+                    <a class="breadcrumbs-item" href="<%= item.href%>"><%= item.text%></a>
+                    <span class="breadcrumbs-item-decorator">></span>
+               <% } %>
+            </div>
+        <% }) %>
+    </div>
+</div>

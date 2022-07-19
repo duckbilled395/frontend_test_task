@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="nav">
+        <ul class="nav-list">
+            <% data.nav.forEach((item) => { %>
+                <li class="nav-list-item"><a class="nav-list-link" href="<%= item.href%>"><%= item.text%></a></li>
+                <% }) %>
+        </ul>
+    </div>
+</div>
